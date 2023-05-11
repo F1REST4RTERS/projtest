@@ -2,7 +2,11 @@
 title: "Warframe"
 author: "EKR"
 date: "`r Sys.Date()`"
-output: html_document
+always_allow_html: true
+output:
+  
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +33,7 @@ library(Hmisc)
 #suggest_embed("https://youtu.be/9O-yCnQKYhM?")
 #Warframe trailer embedded in github, set to start at good point in video:
 
-embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
+#'embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
 ```
 Warframe is a rather unique game as it is entirely *free to play*(FTP), paying money can help skip some of the grind, but even that can be done in game for free via trading with other players. In fact the only items unobtainable to FTP players are a small handful of cosmetics. 
 Despite the minimal monetization, Digital Extremes have managed to keep this game relevant and profitable for 10 years.        
@@ -318,7 +322,7 @@ I believe this graph demonstrates that the release of a new frame is definitely 
 ## Summary:
 Whilst I am still disappointed that I cannot use the custom font (that I spent way too long choosing), or custom geom images with ggplotly, I am still happy with my graph. I believe it provides an intuitive visualization to answer my research question.
 
-If I had more time, I would love to find a way to include playercount numbers from other devices such as consoles (Xbox, Playstation, etc). I would have also liked the time to add other factors that may influence playercount such as expansions (as discussed above).  
+If I had more time, I would love to find a way to include playercount numbers from other devices such as consoles (Xbox, Playstation, etc). I would have also liked the time to add other factors that may influence playercount such as expansions (as discussed above). I also attempted to utilise RENV as a package manager, however ran into a plethora of problems on short notice, so disabaed it. It would be nice if I could get that to work in the future.  
 
 I am very happy with what I have learnt through this course. Prior to this module, coding seemed to be an entirely new language that I would never be able to learn. Now I am proud to say I've used one coding language and definitely want to learn and make more with it or another code language.   
 
