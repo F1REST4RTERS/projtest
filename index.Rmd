@@ -1,11 +1,9 @@
 ---
-title: "index"
+title: "Warframe"
 author: "EKR"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-# WARFRAME
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, echo = FALSE)
@@ -29,9 +27,9 @@ library(Hmisc)
 
 ```{r echo=FALSE}
 #suggest_embed("https://youtu.be/9O-yCnQKYhM?")
-#Warframe trailer embedded in github:
+#Warframe trailer embedded in github, set to start at good point in video:
 
-#embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
+embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
 ```
 Warframe is a rather unique game as it is entirely *free to play*(FTP), paying money can help skip some of the grind, but even that can be done in game for free via trading with other players. In fact the only items unobtainable to FTP players are a small handful of cosmetics. 
 Despite the minimal monetization, Digital Extremes have managed to keep this game relevant and profitable for 10 years.        
@@ -334,27 +332,27 @@ playercount_labels <- c(date = "Date", peak  = "Highest number of players online
 
 label(playercount) <- as.list(playercount_labels[match(names(playercount), names(playercount_labels))])
 
-playercount_code_path <- "Codebook\\playercount_codebook.txt"
-sink(playercount_code_path)
+#playercount_code_path <- "Codebook\\playercount_codebook.txt"
+#sink(playercount_code_path)
 describe(playercount)
-sink()
+#sink()
 
 framerel_labels <- c(date = "Month when a new frame (class) was released", frame = "Name of frame released")
 
 label(framerel) <- as.list(framerel_labels[match(names(framerel), names(framerel_labels))])
 
-framerel_code_path <- "Codebook\\framerel_codebook.txt"
-sink(framerel_code_path)
+#framerel_code_path <- "Codebook\\framerel_codebook.txt"
+#sink(framerel_code_path)
 describe(framerel)
-sink()
+#sink()
 
 merged_labels <- c(date = "Dates (repeated if more than 1 frame was released in 1 month)", peak  = "Highest number of players online at the same time each day, averaged monthly", avg = "Number of players online at the same time, averaged daily, then monthly", frame = "Name of frame released", frpeak = "peak value from column 2, but only if a frame was released that month, if more than 1 frame was released that month then +5000 to each repeated month", merged_date= "date in aesthetic form", image = "URL for custom geom image")
 
 label(merged) <- as.list(merged_labels[match(names(merged), names(merged_labels))])
 
-merged_code_path <- "Codebook\\merged_codebook.txt"
-sink(merged_code_path)
+#merged_code_path <- "Codebook\\merged_codebook.txt"
+#sink(merged_code_path)
 describe(merged, exclude.missing = FALSE)
-sink()
+#sink()
 
 ```

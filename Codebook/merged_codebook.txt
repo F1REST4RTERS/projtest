@@ -1,0 +1,65 @@
+merged 
+
+ 7  Variables      138  Observations
+------------------------------------------------------------------------------------------
+date : Dates (repeated if more than 1 frame was released in 1 month) 
+         n    missing   distinct       Info       Mean        Gmd        .05        .10 
+       138          0        124          1 2017-11-30       1281 2013-05-01 2013-10-22 
+       .25        .50        .75        .90        .95 
+2015-05-08 2017-11-16 2020-06-23 2022-02-09 2022-09-05 
+
+lowest : 2013-01-01 2013-02-01 2013-03-01 2013-04-01 2013-05-01
+highest: 2022-12-01 2023-01-01 2023-02-01 2023-03-01 2023-04-01
+------------------------------------------------------------------------------------------
+peak : Highest number of players online at the same time each day, averaged monthly 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50 
+     138        0      124        1    61220    36419    18072    19405    37922    59001 
+     .75      .90      .95 
+   81683   100704   118297 
+
+lowest :      0      1  14349  15714  16381, highest: 121377 129002 131766 154246 181509
+------------------------------------------------------------------------------------------
+avg : Number of players online at the same time, averaged daily, then monthly 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50 
+     138        0      123        1    33812    19060     9178    10644    20899    34718 
+     .75      .90      .95 
+   46617    54651    56623 
+
+lowest : 0       1960.13 8831.78 8937.68 9220.75, highest: 61486.6 61908.8 62800.5 68891.7 76594.9
+------------------------------------------------------------------------------------------
+frame : Name of frame released 
+       n  missing distinct 
+      81       57       81 
+
+lowest : Ash Prime     Atlas         Atlas Prime   Banshee       Banshee Prime
+highest: Wukong Prime  Xaku          Yareli        Zephyr        Zephyr Prime 
+------------------------------------------------------------------------------------------
+frpeak : peak value from column 2, but only if a frame was released that month, if more than 1 frame was released that month then +5000 to each repeated month 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50 
+      81       57       81        1    63792    40501    18459    19939    34785    58719 
+     .75      .90      .95 
+   85227   115102   129002 
+
+lowest :      0   5000  15714  18274  18459, highest: 129002 131766 134002 154246 181509
+------------------------------------------------------------------------------------------
+merged_date : date in aesthetic form 
+       n  missing distinct 
+     138        0      124 
+
+lowest : Apr 2013 Apr 2014 Apr 2015 Apr 2016 Apr 2017
+highest: Sep 2018 Sep 2019 Sep 2020 Sep 2021 Sep 2022
+------------------------------------------------------------------------------------------
+image : URL for custom geom image 
+                                                                       n 
+                                                                     138 
+                                                                 missing 
+                                                                       0 
+                                                                distinct 
+                                                                       1 
+                                                                   value 
+https://warframe-school.com/wp-content/uploads/2018/07/Warframe-Logo.png 
+                                                                                   
+Value      https://warframe-school.com/wp-content/uploads/2018/07/Warframe-Logo.png
+Frequency                                           138                            
+Proportion                                          1                              
+------------------------------------------------------------------------------------------

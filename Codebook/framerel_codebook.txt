@@ -1,0 +1,18 @@
+framerel 
+
+ 2  Variables      90  Observations
+------------------------------------------------------------------------------------------
+date : Month when a new frame (class) was released 
+       n  missing distinct 
+      90        0       69 
+
+lowest : Oct 2012 Dec 2012 Jan 2013 Mar 2013 May 2013
+highest: Jul 2022 Sep 2022 Oct 2022 Nov 2022 Dec 2022
+------------------------------------------------------------------------------------------
+frame : Name of frame released 
+       n  missing distinct 
+      90        0       90 
+
+lowest : Ash          Ash Prime    Atlas        Atlas Prime  Banshee     
+highest: Wukong Prime Xaku         Yareli       Zephyr       Zephyr Prime
+------------------------------------------------------------------------------------------
