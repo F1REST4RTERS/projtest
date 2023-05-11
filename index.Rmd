@@ -65,7 +65,7 @@ playercount = data.frame(date, avg, gain, pctgain, peak, stringsAsFactors = FALS
 head(playercount)
 
 #Creating an archived backup CSV of data frame in case URL is compromised:
-write.csv(playercount,"CSVs\\playercount.csv")
+#write.csv(playercount,"CSVs\\playercount.csv")
 
 #If URL does get compromised the following code will retrieve the archived dataframe from 09/05/23:
 
@@ -91,7 +91,7 @@ framerel = data.frame(frame, release, stringsAsFactors = FALSE)
 head(framerel)
 
 #Creating an archived backup CSV of data frame in case URL is compromised:
-write.csv(framerel,"CSVs\\framerel.csv")
+#write.csv(framerel,"CSVs\\framerel.csv")
 
 #If URL does get compromised the following code will retrieve the archived dataframe from 09/05/23:
 
@@ -187,7 +187,7 @@ merged$merged_date <- merged_date
 
 #Creating CSV backup for the merged dataframe:
 
-write.csv(merged,"CSVs\\merged.csv")
+#write.csv(merged,"CSVs\\merged.csv")
 
 #In case of emergency, remove "#":
 
