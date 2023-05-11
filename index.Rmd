@@ -31,7 +31,7 @@ library(Hmisc)
 #suggest_embed("https://youtu.be/9O-yCnQKYhM?")
 #Warframe trailer embedded in github:
 
-embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
+#embed_youtube("9O-yCnQKYhM") %>% use_start_time("101")
 ```
 Warframe is a rather unique game as it is entirely *free to play*(FTP), paying money can help skip some of the grind, but even that can be done in game for free via trading with other players. In fact the only items unobtainable to FTP players are a small handful of cosmetics. 
 Despite the minimal monetization, Digital Extremes have managed to keep this game relevant and profitable for 10 years.        
